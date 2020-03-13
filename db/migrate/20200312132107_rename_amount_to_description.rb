@@ -3,3 +3,10 @@ class RenameAmountToDescription < ActiveRecord::Migration[5.2]
     rename_column :doses, :amount, :description
   end
 end
+
+
+
+
+
+
+
