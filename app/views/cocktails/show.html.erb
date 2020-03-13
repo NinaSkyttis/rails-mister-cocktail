@@ -1,0 +1,13 @@
+
+<h2><%= @cocktail.name %></h2>
+<div class="card">
+  <h5>Ingredients</h5>
+  <% @cocktail.ingredients.each do |ingredient| %>
+    <p><%= ingredient.name %></p>
+<!--     <p><%# dose.description %></p> -->
+  <% end %>
+</div>
+<%= link_to "Add a new ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary"%>
+
+<br>
+<%= link_to "Back", cocktails_path %>

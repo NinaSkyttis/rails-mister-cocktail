@@ -1,0 +1,14 @@
+<h1>Mister Cocktail</h1>
+
+<ul class= "list-group">
+  <% @cocktails.each do |c| %>
+  <li class= "list-group-item">
+  <%= link_to c.name, cocktail_path(c) %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Add cocktail', new_cocktail_path, class: "btn btn-primary"%>
+
+
+
