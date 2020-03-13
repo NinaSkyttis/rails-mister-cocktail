@@ -1,11 +1,17 @@
-<h2>new</h2>
+<h1>New Cocktail</h1>
+<%= render 'form', cocktail: @cocktail %>
+<%= link_to 'Back', cocktails_path %>
 
-<%= simple_form_for @cocktail do |f| %>
+
+
+<!-- <h2>new</h2>
+
+<%#simple_form_for @cocktail do |f| %>
   <div class="form-group">
-    <%= f.input :name %>
+    <%#f.input :name %>
   </div>
 
-  <%= f.submit class: 'btn btn-primary' %>
-<% end %>
-
+  <%#f.submit class: 'btn btn-primary' %>
+<%# end %>
+ -->
 <!-- collection: tag.all -->
