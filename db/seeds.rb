@@ -24,19 +24,6 @@ cocktail = Cocktail.create!(name: "vodka")
 cocktail = Cocktail.create!(name: "whisky")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # mint_julep = Cocktail.create!(name: "Mint Julep")
 # whiskey = Cocktail.create(name: "Whiskey Sour")
 # mojito = Cocktail.create(name: "Mojito")
