@@ -1,11 +1,13 @@
-<h1>Mister Cocktail</h1>
+<div class="card">
+    <% @cocktails.each do |c| %>
+    <div class="card-product" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/1200x900/?cocktail);">
+        <div class="card-product-infos">
+            <%= link_to c.name, cocktail_path(c) %>
+            <%= link_to 'Delete', cocktails_path(@cocktails), method: :delete  %>
+      </div>
+    </div>
+<% end %>
+</div>
 
-<ul class= "list-group">
-  <% @cocktails.each do |c| %>
-  <li class= "list-group-item">
-  <%= link_to c.name, cocktail_path(c) %>
-  </li>
-  <% end %>
-</ul>
 
 <%= link_to 'Add cocktail', new_cocktail_path, class: "btn btn-primary"%>

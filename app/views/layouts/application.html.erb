@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1558383409-ab7ef8db3e01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=770&q=80');">
+    <div class="container">
+        <h1>Cocktail Master brings <strong>her best Recipes</strong> to <strong>the people</strong>!</h1>
+        <p>Change your life and learn how to make the most perfect drinks</p>
+    </div>
+</div>
+
+
+<head>
     <title>RailsMisterCocktail</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
 
-  </head>
-
-  <body>
+<body>
     <%= yield %>
+    <%= javascript_include_tag "application" %>
+    <!-- from app/assets/javascripts/application.js -->
+    <%= javascript_pack_tag "application" %>
+    <!-- from app/javascript/packs/application.js -->
+</body>
+<div class="footer">
+    <div class="footer-links">
+        <a href="https://github.com/alexandrezagame"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/iamalexbacelo/?hl=fr"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/azagame"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/AlexandreZagame"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/alexandrezagame/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+        This footer is made with <i class="fas fa-heart"></i> by Nina
+    </div>
+</div>
 
-    <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
-    <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
-  </body>
 </html>
